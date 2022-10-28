@@ -12,14 +12,14 @@ Technically :
 
 
 Usage exemple :
-# Welcome to sum_poly !
-# Press enter to continue...
-# Choose a symbol (defaut : x) :
+Welcome to sum_poly !
+Press enter to continue...
+Choose a symbol (defaut : x) :
 x
-# Enter a sequence of polynomial expressions (symbol : x, separator : ; ) :
+Enter a sequence of polynomial expressions (symbol : x, separator : ; ) :
 x ; x**2 ; x**3 ; x**5-2*x**2+10           
-# SUM for x from 0 to n : 
-#   Factor : n*(n + 1)/2
+SUM for x from 0 to n : 
+\#   Factor : n*(n + 1)/2
 #   Expand : n**2/2 + n/2
 # SUM for x**2 from 0 to n : 
 #   Factor : n*(n + 1)*(2*n + 1)/6
