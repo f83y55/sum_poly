@@ -1,6 +1,6 @@
 This python3 script, given : 
  - a symbol (such as X) and 
- - a, or many, polynomial(s) expression(s) P (such as X**2+3x),
+ - a, or many, polynomial(s) expression(s) P (such as X**2+3*x),
 
 Outputs :
  - the sum of P(k) formula(s), with k integer from 0 to n.
