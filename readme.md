@@ -1,8 +1,9 @@
-This python3 script outputs, given : 
+This python3 script, given : 
  - a symbol (like X) and 
  - a or many polynomial(s) expression(s) P (like X**2+3x),
- outputs :
-   the sum of P(k) with k integer from 0 to n formula(s).
+
+Outputs :
+ - the sum of P(k) with k integer from 0 to n formula(s).
 
 
 Technically :
