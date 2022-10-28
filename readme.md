@@ -9,7 +9,7 @@ Outputs :
 Technically :
  - sympy is required
  - the script produces a sum_poly.html file, 
-     with MathJax (LaTeX) formatting (web access required)
+     with [MathJax](https://github.com/mathjax/MathJax) (LaTeX) formatting (web access required)
 
 
 Usage exemple :
