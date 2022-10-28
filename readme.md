@@ -5,12 +5,21 @@ This python3 script, given :
 Outputs :
  - the sum of P(k) with k integer from 0 to n formula(s).
 
-
 Technically :
  - sympy is required
  - the script produces a sum_poly.html file, 
      with [MathJax](https://github.com/mathjax/MathJax) (LaTeX) formatting (web access required)
 
+The maths takes place only here :
+```py
+def sum_poly(P, X) :
+    N, Q = sympy.degree(P)+1, 0
+    for i in range(N+1) :
+        L = sympy.prod([X-j for j in range(N+1) if j != i])
+        s = sum([P.subs(X, k) for k in range(i+1)])
+        Q += sympy.Rational((-1)**(N-i), sympy.factorial(i)*sympy.factorial(N-i)) * s * L
+    return sympy.factor(Q), sympy.expand(Q)
+```
 
 Usage exemple :
 ```
