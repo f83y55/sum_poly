@@ -2,10 +2,10 @@ import sympy.core, sympy.parsing.sympy_parser
 
 
 def sum_poly(P, X) :
-    N, Q = sympy.degree(P)+1, 0
+    N, Q, s = sympy.degree(P)+1, 0, 0
     for i in range(N+1) :
         L = sympy.prod([X-j for j in range(N+1) if j != i])
-        s = sum([P.subs(X, k) for k in range(i+1)])
+        s += P.subs(X, i)
         Q += sympy.Rational((-1)**(N-i), sympy.factorial(i)*sympy.factorial(N-i)) * s * L
     return sympy.factor(Q), sympy.expand(Q)
 
@@ -35,8 +35,11 @@ def html_add(html_str:str="", html_str_include:str=""):
         <html>
         <head>
             <meta charset="utf-8"/> <title>sum_poly</title>
+            <!-- online MathJax -->
             <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
             <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+            <!-- offline MathJax -->
+            <script id="MathJax-script" async src="MathJax-master/es5/tex-mml-chtml.js"></script>
         </head>
         <body>
         <!--insert--here-->

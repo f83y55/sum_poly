@@ -7,16 +7,17 @@ Outputs :
 
 Technically :
  - [sympy](https://www.sympy.org) is required !
- - the script produces a sum_poly.html file, 
-     with [MathJax](https://github.com/mathjax/MathJax) (LaTeX) formatting (web access required)
+ - the script produces a *sum_poly.html* file, with [MathJax](https://github.com/mathjax/MathJax) (LaTeX) formatting (web access required)
+ - web/sympy unaivable ? : extract the two 7z files.
+ - *sum_poly.py* recreates *sum_poly.html* (the html file can be deleted) ; the script is the only file needed when sympy is installed and the web is accessible.
 
 The maths takes place only here :
 ```py
 def sum_poly(P, X) :
-    N, Q = sympy.degree(P)+1, 0
+    N, Q, s = sympy.degree(P)+1, 0, 0
     for i in range(N+1) :
         L = sympy.prod([X-j for j in range(N+1) if j != i])
-        s = sum([P.subs(X, k) for k in range(i+1)])
+        s += P.subs(X, i)
         Q += sympy.Rational((-1)**(N-i), sympy.factorial(i)*sympy.factorial(N-i)) * s * L
     return sympy.factor(Q), sympy.expand(Q)
 ```
@@ -45,7 +46,6 @@ x ; x**2 ; x**3 ; x**5-2*x**2+10
 
 MathJax HTML output :
 ![MathJax output exemple](sum_poly_exemple.png)
-
 
 HTML file's source code :
 ```
