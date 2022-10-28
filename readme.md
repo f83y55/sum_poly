@@ -12,28 +12,29 @@ Technically :
 
 
 Usage exemple :
- - Welcome to sum_poly !
- - Press enter to continue...
- - Choose a symbol (defaut : x) :
+```
+# Welcome to sum_poly !
+# Press enter to continue...
+# Choose a symbol (defaut : x) :
 x
- - Enter a sequence of polynomial expressions (symbol : x, separator : ; ) :
+# Enter a sequence of polynomial expressions (symbol : x, separator : ; ) :
 x ; x**2 ; x**3 ; x**5-2*x**2+10           
- - SUM for x from 0 to n : 
- -   Factor : n*(n + 1)/2
- -   Expand : n**2/2 + n/2
- - SUM for x**2 from 0 to n : 
- -   Factor : n*(n + 1)*(2*n + 1)/6
- -   Expand : n**3/3 + n**2/2 + n/6
- - SUM for x**3 from 0 to n : 
- -   Factor : n**2*(n + 1)**2/4
- -   Expand : n**4/4 + n**3/2 + n**2/4
- - SUM for x**5 - 2*x**2 + 10 from 0 to n : 
- -   Factor : (n + 1)*(2*n**5 + 4*n**4 + n**3 - 9*n**2 - 4*n + 120)/12
- -   Expand : n**6/6 + n**5/2 + 5*n**4/12 - 2*n**3/3 - 13*n**2/12 + 29*n/3 + 10
-
+# SUM for x from 0 to n : 
+#   Factor : n*(n + 1)/2
+#   Expand : n**2/2 + n/2
+# SUM for x**2 from 0 to n : 
+#   Factor : n*(n + 1)*(2*n + 1)/6
+#   Expand : n**3/3 + n**2/2 + n/6
+# SUM for x**3 from 0 to n : 
+#   Factor : n**2*(n + 1)**2/4
+#   Expand : n**4/4 + n**3/2 + n**2/4
+# SUM for x**5 - 2*x**2 + 10 from 0 to n : 
+#   Factor : (n + 1)*(2*n**5 + 4*n**4 + n**3 - 9*n**2 - 4*n + 120)/12
+#   Expand : n**6/6 + n**5/2 + 5*n**4/12 - 2*n**3/3 - 13*n**2/12 + 29*n/3 + 10
+```
 
 HTML file's source code :
-<pre>
+```
 <!DOCTYPE html>
         <html>
         <head>
@@ -49,5 +50,5 @@ HTML file's source code :
 <!--insert--here-->
         </body>
         </html>
-</pre>
+```
 
