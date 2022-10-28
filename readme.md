@@ -1,12 +1,12 @@
 This python3 script, given : 
- - a symbol (like X) and 
- - a or many polynomial(s) expression(s) P (like X**2+3x),
+ - a symbol (such as X) and 
+ - a, or many, polynomial(s) expression(s) P (such as X**2+3x),
 
 Outputs :
- - the sum of P(k) with k integer from 0 to n formula(s).
+ - the sum of P(k) formula(s), with k integer from 0 to n.
 
 Technically :
- - sympy is required
+ - [sympy](www.sympy.org) is required !
  - the script produces a sum_poly.html file, 
      with [MathJax](https://github.com/mathjax/MathJax) (LaTeX) formatting (web access required)
 
