@@ -6,7 +6,7 @@ Outputs :
  - the sum of P(k) formula(s), with k integer from 0 to n.
 
 Technically :
- - [sympy](www.sympy.org) is required !
+ - [sympy](https://www.sympy.org) is required !
  - the script produces a sum_poly.html file, 
      with [MathJax](https://github.com/mathjax/MathJax) (LaTeX) formatting (web access required)
 
