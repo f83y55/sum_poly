@@ -43,6 +43,10 @@ x ; x**2 ; x**3 ; x**5-2*x**2+10
 #   Expand : n**6/6 + n**5/2 + 5*n**4/12 - 2*n**3/3 - 13*n**2/12 + 29*n/3 + 10
 ```
 
+MathJax HTML output :
+![MathJax output exemple](sum_poly_exemple.png)
+
+
 HTML file's source code :
 ```
 <!DOCTYPE html>
